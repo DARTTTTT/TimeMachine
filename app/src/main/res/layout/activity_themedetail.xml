@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.wrg.timemachine.Rewrite.MyScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+              <!--  <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    >
+
+
+
+
+                    <TextView
+                        android:id="@+id/detail_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:lines="2"
+                        android:text=""
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/detail_resource"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>-->
+
+                <!--  <TextView
+                      android:id="@+id/detail_content"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="10dp"
+                      android:textColor="@color/colorBlack"
+                      android:textSize="16sp" />-->
+
+                <WebView
+                    android:id="@+id/webview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="10dp"/>
+
+
+            </LinearLayout>
+        </com.wrg.timemachine.Rewrite.MyScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/colorId" />
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titleHeight"
+        android:background="@color/colorWhite"
+
+        >
+
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onClick="btnClick"
+            android:layout_gravity="left"
+            android:text="返回"
+            android:textColor="@drawable/selector_text_press_black_color"
+            android:textStyle="bold" />
+
+        <!--<TextView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="60dp"
+            android:gravity="center"
+            android:onClick="btnClick"
+            android:text="下一篇"
+            android:textColor="@drawable/selector_text_press_black_color"
+            android:textStyle="bold" />-->
+
+        <!--<RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+
+            >
+
+            <RadioButton
+                android:id="@+id/big"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:gravity="center"
+                android:text="20"
+                android:textStyle="bold"
+                android:textColor="@drawable/selector_text_press_black_color" />
+
+            <RadioButton
+                android:id="@+id/small"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:button="@null"
+                android:gravity="center"
+                android:text="16"
+                android:textStyle="bold"
+                android:textColor="@drawable/selector_text_press_black_color" />
+
+        </RadioGroup>-->
+
+        <TextView
+            android:id="@+id/long_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="长评论"
+            android:textColor="@drawable/selector_text_press_black_color"
+            android:textStyle="bold" />
+
+    </Toolbar>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    >
+<LinearLayout
+    android:id="@+id/stay_ly"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatar"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+
+        android:src="@mipmap/ic_launcher"
+        />
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:text="六六"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        />
+
+</LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_item_popupwindow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:text="朋友去拔牙，结果医生拔了四个小时还是把她的牙拔坏了，在拔了两个小时的时候和她说：你看，你当时也签过字的吧，手术有风险的，巴拉巴拉的一堆（大致意思就是各种推卸责任）。其实是当时拔牙前医生没好好看拍的片子就拔了，弄到现在一个多月了牙肉也都愈合不了，她去其它医院看其他医生和她说这情况还是蛮严重的。 我家里人动手术，明明是右腿，推进手术室里在给她的左腿消毒啥的，也是无语。 真是有时候不是我们患者想闹，有些医生连基本的道德都没有。"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:layout_below="@+id/stay_ly"
+        />
+</RelativeLayout>
